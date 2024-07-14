@@ -31,10 +31,10 @@ Running the Script:
     Execute the script from RStudio or R command line.
     Ensure you define directory paths for "BASE" and "DESCARGA" according to your setup.
 
-source("ImagesSearcher.R")
-directorio_destino <- "path/to/your/DESCARGA/directory"
-codigos_a_buscar <- readLines("path/to/your/ITEMS.txt")
-descargar_imagenes(codigos_a_buscar, directorio_destino)
+- source("ImagesSearcher.R")
+- directorio_destino <- "path/to/your/DESCARGA/directory"
+- codigos_a_buscar <- readLines("path/to/your/ITEMS.txt")
+- descargar_imagenes(codigos_a_buscar, directorio_destino)
 
 Customization:
 
@@ -44,9 +44,9 @@ Customization:
 
 Example ITEMS.txt File
 
-product_code1
-product_code2
-product_code3
+- product_code1
+- product_code2
+- product_code3
 
 # Contribution
 
