@@ -7,7 +7,7 @@ library(digest)
 descargar_imagenes <- function(codigos, carpeta_destino) {
   for (codigo in codigos) {
     # Verificar si el código ya existe en el directorio BASE
-    if (file.exists(file.path("C:/Users/3568528/Desktop/Directorio/56_Imagenes_Encuestas/BASE", paste0(codigo, ".jpg")))) {
+    if (file.exists(file.path("path/to/BASE", paste0(codigo, ".jpg")))) {
       cat("El codigo", codigo, "ya existe en el directorio BASE. Se omite la busqueda.\n")
       next
     }
@@ -53,10 +53,10 @@ descargar_imagenes <- function(codigos, carpeta_destino) {
 }
 
 # Directorio de destino donde guardar las imagenes descargadas
-directorio_destino <- "C:/Users/3568528/Desktop/Directorio/56_Imagenes_Encuestas/DESCARGA"
+directorio_destino <- "path/to/DESCARGA"
 
 # Leer los codigos desde el archivo ITEMS.txt
-codigos_a_buscar <- readLines("C:/Users/3568528/Desktop/Directorio/56_Imagenes_Encuestas/ITEMS.txt")
+codigos_a_buscar <- readLines("path/to/ITEMS.txt")
 
 # Descargar imagenes solo para los codigos que no existen en el directorio BASE
 cat("Descargando imagenes...\n")
